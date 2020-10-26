@@ -55,10 +55,10 @@ public class Driver {
 			MusicRecord m1 = new MusicRecord("Hello", "Adel", 2.2, 5);
 			MusicRecord m2 = new MusicRecord("Holiday", "Green Day", 2.4, 4);
 			MusicRecord m3 = new MusicRecord("Happy", "Pharrell Williams", 2.3, 3);
-			MusicRecord m4 = new MusicRecord("sugar", "Maroon 5", 2.8, 5);
-			MusicRecord m5 = new MusicRecord("Thriller", "Michael Jackson", 2.45, 4);
+			MusicRecord m4 = new MusicRecord("sugar", "Maroon 5", 2.8, 1);
+			MusicRecord m5 = new MusicRecord("Thriller", "Michael Jackson", 2.45, 2);
 			MusicRecord m6 = new MusicRecord("Try", "Pink", 2.56, 3);
-			MusicRecord m7 = new MusicRecord("Time", "Pink Floydk", 2.23, 3);
+			MusicRecord m7 = new MusicRecord("Time", "Pink Floydk", 2.23, 6);
 			
 			MusicRecord[] records = new MusicRecord[7];
 			records[0] = m1;
@@ -70,18 +70,20 @@ public class Driver {
 			records[6] = m7;
 			
 			//Ask the user to enter the title of record
-			//read the input
 			System.out.println("please enter record title: ");
+			
+			//read the input
 			String recordTitle = input.nextLine();
 			
 			//findRecord
-			//print the record
 			int index = findIndexOfMusicRecords(records, recordTitle);
 			
 			if (index == -1) {
 				System.err.println("We don't have " + recordTitle);
 			} else {
 				System.out.println(recordTitle);
+				
+			//print the record
 				printMusicRecord(records[index]);
 			}
 

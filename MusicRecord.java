@@ -23,7 +23,7 @@ public class MusicRecord {
 		setRecordRanking(recordRanking);
 	}
 	 
-	//getter setters
+	//getter 
 	
 	/*
 	 * @ return id
@@ -60,6 +60,8 @@ public class MusicRecord {
 		return recordRanking;
 	}
 	
+	
+	//setters
 	/*
 	 * @parm 
 	 * id --> random number from 100 to 10000
